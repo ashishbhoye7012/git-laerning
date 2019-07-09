@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jAVAsCRI[</title>
+    <script type="text/javascript">
+
+         
+
+        function cnfrm()
+        {
+            var regexp=/abc/;
+            var num = /[6-9][0-9]{9}$/;
+            var username= document.getElementById("fn").value; 
+            var pwd = document.getElementById("paw").value;
+            if (regexp.test(username))
+            {
+                document.getElementById("lab1").style.visibility="visible"
+            }
+            else
+            {
+                document.getElementById("lab1").style.visibility="hidden"
+            }
+
+            if(num.test(pwd))
+            {
+                alert('Valid number');    
+            }
+            else
+            {
+                alert('Invalid number');
+            }
+        }
+    </script>
+</head>
+<body>
+   <form>
+        <label for="username" id="lab1" style="visibility:hidden;">Correct</label>
+        <input type="text"  name="username" id="fn" placeholder="your name"></input><br>
+        <label type="text" id="lab2">password</label>
+        <input type="text"  id="paw" name=" password" placeholder="your password"></input>
+    </form> 
+ 
+    <br>
+
+    
+
+    <button onclick="cnfrm()"> clink me</button>
+        
+
+
+
+        <h1 id="#c5">This my heading one</h1>
+
+        
+       
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+</html>

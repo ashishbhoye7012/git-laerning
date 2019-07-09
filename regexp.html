@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bhoye Ashish</title>
+
+
+         <script text="javascrit">
+             function ashish()
+            {
+                var text = document.getElementById("asb").value;
+                var regexp =/^([a-zA-z0-9\.-]+)@([a-zA-z0-9]+).([a-z]+)$/
+
+                if (regexp.test(text) )
+                {
+
+                    document.getElementById("lab1").innerHTML="valid";
+                    document.getElementById("lab1").style.visibility="visible";
+                    document.getElementById("lab1").style.color="green";
+                }
+                else
+                {
+                    document.getElementById("lab1").innerHTML="Invalid";
+                    document.getElementById("lab1").style.visibility="visible";
+                    document.getElementById("lab1").style.color="red";
+                        
+                
+                
+                }
+                
+            }
+
+
+             
+
+         </script>
+
+</head>
+<body>
+    
+        <form>
+            <input type="text"  id="asb" placeholder="Email"><br>
+            <label id="lab1" style="color:red; visibility:hidden">invalid</label>
+            <br>
+           
+
+
+        </form>
+        <h1> This bhoye Ashish page</h1>
+        <button onclick="ashish()" type="button">submiton</button>
+    
+    
+</body>
+</html>
